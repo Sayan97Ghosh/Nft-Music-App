@@ -29,8 +29,8 @@ describe("MusicNFTMarketplace", function () {
   describe("Deployment", function () {
 
     it("Should track name, symbol, URI, royalty fee and artist", async function () {
-      const nftName = "DAppFi"
-      const nftSymbol = "DAPP"
+      const nftName = "Sayan"
+      const nftSymbol = "Personal"
       expect(await nftMarketplace.name()).to.equal(nftName);
       expect(await nftMarketplace.symbol()).to.equal(nftSymbol);
       expect(await nftMarketplace.baseURI()).to.equal(URI);

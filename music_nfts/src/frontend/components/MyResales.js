@@ -67,7 +67,7 @@ export default function MyResales({ contract, account }) {
       <div className="flex justify-center">
         {listedItems.length > 0 ?
           <div className="px-5 py-3 container">
-            <h2>Listed</h2>
+            <h2 className='text-light bg-dark'>Listed</h2>
             <Row xs={1} md={2} lg={4} className="g-4 py-3">
               {listedItems.map((item, idx) => (
                 <Col key={idx} className="overflow-hidden">
@@ -121,14 +121,14 @@ export default function MyResales({ contract, account }) {
                 </Row>
                 : (
                   <main style={{ padding: "1rem 0" }}>
-                    <h2>No sold assets</h2>
+                    <h2 className='text-light bg-dark'>No sold assets</h2>
                   </main>
                 )}
             </>
           </div>
           : (
             <main style={{ padding: "1rem 0" }}>
-              <h2>No listed assets</h2>
+              <h2 className='text-light bg-dark'>No listed assets</h2>
             </main>
           )}
       </div>

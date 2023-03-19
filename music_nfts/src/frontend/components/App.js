@@ -14,6 +14,8 @@ import Home from './Home.js'
 import MyTokens from './MyTokens.js'
 import MyResales from './MyResales.js'
 import './App.css';
+import Footer from "./Footer";
+
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -41,7 +43,7 @@ function App() {
         <>
           <Navbar expand="lg" bg="primary" variant="dark">
             <Container>
-              <Navbar.Brand href="http://www.dappuniversity.com/bootcamp">
+              <Navbar.Brand href="">
                 <img src={logo} width="40" height="40" className="" alt="" />
                 &nbsp; SwanPlayer & Nft
               </Navbar.Brand>
@@ -78,6 +80,7 @@ function App() {
               <Spinner animation="border" style={{ display: 'flex' }} />
               <p className='mx-3 my-0'>Awaiting Metamask Connection...</p>
             </div>
+            
           ) : (
             <Routes>
               <Route path="/" element={
@@ -91,9 +94,13 @@ function App() {
               } />
             </Routes>
           )}
+          
         </div>
+        <Footer/>
       </div>
     </BrowserRouter>
+
+    
 
   );
 }

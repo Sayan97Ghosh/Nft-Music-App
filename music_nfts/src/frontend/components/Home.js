@@ -1,9 +1,11 @@
 import { useState, useEffect, useRef } from 'react'
 import { ethers } from "ethers"
 import Identicon from 'identicon.js';
-import { Card, Button, ButtonGroup, Image, Container } from 'react-bootstrap'
+import { Card, Button, ButtonGroup, Image } from 'react-bootstrap'
 import svg from "./new.svg"
 import"./Home.css";
+import Footer from './Footer';
+
 const Home = ({ contract }) => {
   const audioRef = useRef(null);
   const [loading, setLoading] = useState(true)
@@ -82,21 +84,34 @@ const Home = ({ contract }) => {
     <div className="container-fluid mt-5">
      
   <div className='header'>
+    <div>
   <blockquote>
-  People who think they know everything are a great annoyance to those of us who
-  do. <i>Isaac Asimov</i>
+    SwanPlayer & Nft is a blockchain based music app and it's will provide the high quality music and provide a secure transaction about music
+   <i>~Sayan Ghosh</i>
 </blockquote>
-{/* <blockquote lang="fr">
-  L'intelligence, c'est comme les parachutes, quand on n'en a pas, on s'écrase.
-  <i>Pierre Desproges</i>
-</blockquote> */}
+<blockquote lang="fr">
+ For Use and buy music please scroll up. Thank You✨
+ 
+</blockquote>
+<blockquote>
+  It's a web 3.0 based Music app Good for Artist's and good for Fans  
+   
+</blockquote>
+
+<blockquote>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia euismod molestie. Cras tempus dui condimentum, elementum mi id, faucibus elit. Etiam mi ligula, mattis vitae orci ut, pharetra volutpat justo. Aenean turpis magna, egestas quis vehicula ut, sollicitudin at augue. Nunc ultricies leo eget nisi malesuada ultricies. Cras ut quam turpis. Praesent suscipit congue turpis, placerat tempus enim auctor in. Aliquam purus purus, commodo at mattis quis, finibus eget enim. Aliquam volutpat orci in mauris porttitor convallis. 
+
+
+   <i>~Sayan Ghosh</i>
+</blockquote>
+</div>
 
          
              <Image width="600px" height="660px" src={svg}/>
           
     </div>   
      
-
+      <h2 className='p-2 mb-5 bg-primary text-white'>Musics</h2>
       {marketItems.length > 0 ?
         <div className="row">
           <main role="main" className="col-lg-12 mx-auto" style={{ maxWidth: '400px' }}>
@@ -133,6 +148,7 @@ const Home = ({ contract }) => {
                         </svg>
                       </Button>
                     </ButtonGroup>
+
                   </div>
                 </Card.Body>
                 <Card.Footer>
@@ -142,9 +158,14 @@ const Home = ({ contract }) => {
                     </Button>
                   </div>
                 </Card.Footer>
+              
+
+
+                 
               </Card>
             </div>
           </main >
+                
         </div >
         : (
           <main style={{ padding: "1rem 0" }}>

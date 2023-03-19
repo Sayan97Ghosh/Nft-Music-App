@@ -13,8 +13,7 @@
 - Install [NodeJS](https://nodejs.org/en/), should work with any node version below 16.5.0
 - Install [Hardhat](https://hardhat.org/)
 
-## Setting Up
-### 1. Clone/Download the Repository
+
 
 ### 2. Install Dependencies:
 ```
@@ -42,7 +41,5 @@ $ npx hardhat node
 ### 7. Launch Frontend
 `$ npm run start`
 
-License
-----
-MIT
+
 
